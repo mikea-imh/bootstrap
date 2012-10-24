@@ -159,7 +159,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 22px;
   color: #232323;
@@ -633,7 +633,7 @@ h4,
 h5,
 h6 {
   margin: 11px 0;
-  font-family: inherit;
+  font-family: "adelle", sans-serif;
   font-weight: bold;
   line-height: 1;
   color: inherit;
@@ -940,7 +940,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -1839,8 +1839,6 @@ table {
   padding: 8px;
   line-height: 22px;
   text-align: left;
-  vertical-align: top;
-  border-top: 1px solid #cccccc;
 }
 
 .table th {
@@ -1848,16 +1846,14 @@ table {
 }
 
 .table thead th {
+  color: #c52228;
+  text-align: center;
   vertical-align: bottom;
+  border-top: 1px solid #cccccc;
 }
 
-.table caption + thead tr:first-child th,
-.table caption + thead tr:first-child td,
-.table colgroup + thead tr:first-child th,
-.table colgroup + thead tr:first-child td,
-.table thead:first-child tr:first-child th,
-.table thead:first-child tr:first-child td {
-  border-top: 0;
+.table tbody {
+  border-top: 1px solid #cccccc;
 }
 
 .table tbody + tbody {
@@ -4262,7 +4258,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 14px;
   margin-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4352,6 +4348,7 @@ input[type="submit"].btn.btn-mini {
   padding: 9px 15px 9px;
   color: #232323;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navbar .nav .dropdown-toggle .caret {
@@ -4530,7 +4527,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
+  position: relative;
   color: #888888;
+  text-transform: uppercase;
 }
 
 .navbar-inverse .brand:hover,
@@ -4547,8 +4546,24 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
+  font-weight: 500;
   color: #ffffff;
   background-color: #c52228;
+}
+
+.navbar-inverse .nav .active > a:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-color: transparent;
+  border-top-color: #c52228;
+  border-style: solid;
+  border-width: 10px;
+  content: ' ';
 }
 
 .navbar-inverse .navbar-link {
