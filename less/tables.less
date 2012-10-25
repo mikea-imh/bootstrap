@@ -31,6 +31,7 @@ table {
   }
   // Bottom align for column headings
   thead th {
+    background-color: @white;
     border-top: 1px solid @tableBorder;
     color: @red;
     vertical-align: bottom;
@@ -51,6 +52,10 @@ table {
   // Account for multiple tbody instances
   tbody + tbody {
     border-top: 2px solid @tableBorder;
+  }
+  tfoot tr {
+    background-color: @white;
+    border-bottom: 1px solid @grayDark;
   }
 }
 
@@ -151,12 +156,14 @@ table {
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 .table-striped {
   tbody {
-    tr:nth-child(odd) td,
-    tr:nth-child(odd) th {
+    tr:nth-child(odd){
       background-color: @tableBackgroundAccent;
     }
   }
 }
+
+// ZEBRA-STRIPING
+// --------------
 
 
 // HOVER EFFECT

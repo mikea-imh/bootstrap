@@ -1849,6 +1849,7 @@ table {
   color: #c52228;
   text-align: center;
   vertical-align: bottom;
+  background-color: #ffffff;
   border-top: 1px solid #cccccc;
 }
 
@@ -1858,6 +1859,11 @@ table {
 
 .table tbody + tbody {
   border-top: 2px solid #cccccc;
+}
+
+.table tfoot tr {
+  background-color: #ffffff;
+  border-bottom: 1px solid #888888;
 }
 
 .table-condensed th,
@@ -1943,14 +1949,13 @@ table {
   -moz-border-radius-topleft: 4px;
 }
 
-.table-striped tbody tr:nth-child(odd) td,
-.table-striped tbody tr:nth-child(odd) th {
+.table-striped tbody tr:nth-child(odd) {
   background-color: #ededed;
 }
 
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
-  background-color: rgba(77, 160, 88, 0.15);
+  background-color: rgba(77, 160, 225, 0.15);
 }
 
 table [class*=span],
