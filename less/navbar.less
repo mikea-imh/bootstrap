@@ -379,11 +379,13 @@
 .navbar-inverse {
   color: @navbarInverseText;
   background-color: @black;
+  margin-bottom: 40px;
 
   .navbar-inner {
     min-height: @navbarHeight - 5;
     // #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
     // border-color: @navbarInverseBorder;
+    
   }
 
   .brand,
@@ -393,13 +395,18 @@
     position: relative;
     &:hover {
       color: @navbarInverseLinkColorHover;
+
     }
   }
-
+.nav > li > a {
+  margin-right: 0px;
+  padding: 8px 30px;
+}
   .nav > li > a:focus,
   .nav > li > a:hover {
     background-color: @navbarInverseLinkBackgroundHover;
     color: @navbarInverseLinkColorHover;
+
   }
 
   .nav .active > a,
@@ -408,6 +415,7 @@
     background-color: @navbarInverseLinkBackgroundActive;
     color: @navbarInverseLinkColorActive;
     font-weight: 500;
+
   }
 
   .nav .active > a:after {
