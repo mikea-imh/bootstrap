@@ -653,7 +653,7 @@ h6 small {
 
 h1 {
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 0;
   font-size: 33px;
   font-weight: 600;
   line-height: 33px;
@@ -677,7 +677,7 @@ h3 {
 }
 
 h4 {
-  padding: 0 0 4px;
+  padding: 2px 0 4px;
   margin: 0;
   font-family: adelle sans;
   font-size: 17px;
@@ -3081,7 +3081,7 @@ button.close {
 }
 
 .btn-large [class^="icon-"] {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .btn-small {
